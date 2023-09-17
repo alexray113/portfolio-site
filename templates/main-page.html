@@ -1,0 +1,75 @@
+{% extends 'base.html' %} {% block title %}{% endblock %} {% block head %}
+<link rel="stylesheet" href="/static/index.css" />
+{% endblock %} {% block body %}
+
+<div class="container-fluid">
+  <!-- row 1 header & contact button -->
+  <div
+    class="cta-hero text-left fs-5 large-container-default row creme-bg-color"
+    id="homepage-row-1"
+  >
+    <div
+      class="cta-hero-text d-flex py-4 px-lg-5 align-self-center col-12 order-2 col-md-6 order-md-1"
+      id="homepage-row-1-div-1"
+    >
+      <h1>Alex Hahn</h1>
+      <p class="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+        necessitatibus velit accusantium nemo corporis quae beatae adipisci enim
+        tenetur, nulla porro ad commodi fugit dolores numquam doloremque quod
+        mollitia corrupti odio distinctio nihil dolorum. Ea doloribus eum
+        dolorum ad porro.
+      </p>
+      <button class="btn btn-lg btn-success">Contact Me</button>
+    </div>
+    <div>
+      <!-- empty -->
+    </div>
+  </div>
+</div>
+
+<!-- row 2 links to projects -->
+<div>
+  <div class="container">
+    <div
+      class="mb-4 row large-container-default creme-bg-color d-flex flex-wrap justify-content-around"
+      id="card-div"
+    >
+      <div class="section-header text-center full-padding-halfem" id="projects">
+        <h1>Projects</h1>
+      </div>
+      <div class="card mb-3 large-container-default">
+        <div class="ratio ratio-21x9 mt-2">
+          <img
+            src="/static/img/empower-site.png"
+            class="object-fit-cover rounded"
+            alt="..."
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Empower Website</h5>
+          <p class="card-text">
+            Website for Empower Counseling & Consulting Service. Made in
+            collaboration with
+            <a href="https://github.com/juneadam/juneadam">June Adam</a>.
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3 large-container-default">
+        <div class="ratio ratio-21x9 mt-2">
+          <img
+            src="/static/img/james-sullivan-ESZRBtkQ_f8-unsplash.jpg"
+            class="object-fit-cover rounded"
+            alt=""
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Coming Soon</h5>
+          <p class="card-text">New project coming soon...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

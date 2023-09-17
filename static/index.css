@@ -1,0 +1,76 @@
+/* ============ homepage styling ============ */
+
+/* ============ CTA / hero-banner styling ============ */
+
+.cta-hero {
+  height: 96vh;
+  background-image: url(/static/img/david-clode-P6j0WytkqPg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+
+.cta-hero-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  color: antiquewhite;
+  text-wrap: balance;
+}
+
+.cta-hero-text h1 {
+  line-height: 1.4em;
+  margin-bottom: 0.5em;
+  max-width: 20ch;
+}
+
+.cta-hero-text p {
+  line-height: 1.15em;
+  margin-bottom: 1.5em;
+  max-width: 50ch;
+}
+
+.cta-hero-text::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: left;
+  background-color: rgba(0, 0, 0, 0.664);
+  z-index: -1;
+}
+
+@media (max-width: 1120px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-height: 500px) {
+  .cta-hero {
+    height: 85vh;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-hero-text {
+    padding: 0 2em;
+  }
+
+  .cta-hero-text::after {
+    width: 100%;
+  }
+}
